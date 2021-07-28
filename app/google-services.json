@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "85874054962",
+    "project_id": "appbangiay-b056e",
+    "storage_bucket": "appbangiay-b056e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85874054962:android:98e99dada38f9b7c09692b",
+        "android_client_info": {
+          "package_name": "com.example.appbangiay.activity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85874054962-9thpa6ab04dfuup9fan09rof6ba03ma8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyvhJ8FF-k5gRruIjTMmVvsEnILXW73RE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85874054962-9thpa6ab04dfuup9fan09rof6ba03ma8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/dl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tb"
+                app:title="Trang chủ"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#f8462f"
+                app:titleTextColor="#f9f9f9">
+            </androidx.appcompat.widget.Toolbar>
+            <ViewFlipper
+                android:adjustViewBounds="true"
+                android:background="#f8462f"
+                android:id="@+id/vl"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+            </ViewFlipper>
+            <LinearLayout
+                android:background="#f2f2f2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:background="#f9f9f9"
+                    android:textSize="20dp"
+                    android:text="Tất cả sản phẩm"
+                    android:textColor="#f8462f"
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_margin="4dp"
+                        android:id="@+id/rvProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </ScrollView>
+
+            </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.navigation.NavigationView
+                android:background="#f8462f"
+                android:id="@+id/nvCategory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start">
+                <ListView
+                    android:id="@+id/lvCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+            </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>
